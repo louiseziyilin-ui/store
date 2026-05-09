@@ -1,0 +1,56 @@
+<html>
+  <body>
+    <link rel="stylesheet" href="unit_3_assignment.css">
+    <div class="header">
+      <h1> The Store </h1>
+    </div>
+
+    <div class = "left-column">
+        <label for = "txt-name">Item Name: </label>
+        <input type = "textbox" id = "txt-name"></input>
+        <p></p>
+
+        <label for = "txt-price">Item Price: </label>
+        <input type = "number" id = "txt-price"></input>
+        <p></p>
+
+        <label for = "txt-barcode">Item Barcode: </label>
+        <input type = "number" id = "txt-barcode"></input>
+        <p></p>
+        
+        <label for = "txt-quantity">Item Quantity: </label>
+        <input type = "number" id = "txt-quantity"></input>
+        <p></p>
+
+        <button type = "button" id = "btn-add-item" onclick = "addItem();">Add Item</button>
+        <p></p>
+      
+        <label for = "txt-remove-item">Input the item's barcode to be removed: </label>
+        <input type = "number" id = "txt-remove-item"></input>
+        <p></p>
+        <button type = "button" onclick = "removeItem();"> Remove Item </button>
+        <p></p>
+
+        <button type = "button" onclick = "printArrayToParagraph();"> Display Items </button>
+        <p id = "p-show-all-items"></p>
+    </div>
+
+    
+    <div class = "right-column">
+        <button type = "button" onclick = "ascendingItemPrice();"> Ascending Sort By Price </button>
+        <button type = "button" onclick = "descendingItemPrice();"> Descending Sort By Price</button>
+        <p id = "p-show-items-sorting-by-price"></p>
+
+        <button type = "button" onclick = "printAllMinimumPrice();"> Search All Minimum Prices </button>
+        <p></p>
+
+        <label for = "txt-search-priced-items">Input A Price To Find All Items Under That Price:</label>
+        <input type = "number" id = "txt-search-priced-items"> </Input>
+        <p></p>
+        <button type = "button" onclick = "searchItemsUnderCertainPrice();"> Search All Items Under Certain Price </button>
+        <p id = "p-show-searching-items"></p>
+    </div>
+    
+    <script src = "script.js"></script>
+  </body>
+</html>
